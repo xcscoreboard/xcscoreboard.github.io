@@ -1,0 +1,91 @@
+﻿<html>
+	
+<head>
+	<title>Racers Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("RacersPage");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Racers Page</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Newtopic.html">Cross Country Scorebard Pages</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Newtopic.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="ConfigPage.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Newtopic1.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h1 class="rvps4"><a name="_Toc450320564"></a>
+<span class="rvts0"><span class="rvts13">Racers Page</span></span></h1>
+<p class="rvps7"><span class="rvts6">The Racers Page is where a team’s registered racers are entered and each assigned a Group and Bib#. Quick entry has been configured to speed manual entry. When there is an empty row below the row with the active entry, when the &lt;enter&gt; key is pressed, the active row’s Group, Team Name, and the next consecutive Bib# is copied to the next row. Additionally, the next row’s Racer Name entry is activated for input so all you need to enter is the racer’s name … if the Group or Team Name is different from the above, simply tab to that cell and make the change.</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; margin-left: 0px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps24"><span class="rvts26">The Racers sheet can also be populated by importing directly from a CSV file, Excel file, or online Google Spreadsheet with the same field order as the Racers Sheet, i.e., Racer Name, Group, Team Name, Bib #. Simply use the Import menu to select the desired import method and select the desired file and worksheet.</span><br/><span class="rvts26"><br/></span></li>
+<li style="margin-left: 0px" class="rvps24"><span class="rvts26">Note that imported data begins in row 1 and overwrites subsequent row data up to the number of rows that exist in the source file.</span><br/><span class="rvts26"><br/></span></li>
+<li style="margin-left: 0px" class="rvps24"><span class="rvts26">The Racers sheet can be sorted by any of the four fields by clicking the desired column header field name.</span><br/><span class="rvts26"><br/></span></li>
+<li style="margin-left: 0px" class="rvps24"><span class="rvts26">After all Racers have been entered, click the Team Sheets link to open the list in a web browser. This list is formatted with page breaks between each team, so that when printed, each team will be printed in its own set of pages. Print and add these pages to each team’s race packet so they will know their bib assignments.</span></li>
+</ul></ul>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

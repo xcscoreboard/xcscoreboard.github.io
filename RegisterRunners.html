@@ -1,0 +1,90 @@
+﻿<html>
+	
+<head>
+	<title>Register Runners</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("RegisterRunners");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Register Runners</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="RaceScoringOverviewandProcess.html">Race Scoring Overview and Process</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="RaceScoringOverviewandProcess.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="ConfigureRace.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="ConductRace.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h2 class="rvps6"><a name="_Toc450320554"></a>
+<span class="rvts0"><span class="rvts20">Register Runners</span></span></h2>
+<p class="rvps7"><span class="rvts16">Enter/Register runners in the "Racers" Tab</span><br/><span class="rvts16"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: decimal;"><ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" style="margin-left: 0px" class="rvps19"><span class="rvts6">Assign unique bib#'s to each racer. </span><br/><span class="rvts6">Note that xcscoreboard supports multiple groups racing at a single event, e.g., your group names night be Varsity Girls, Varsity Boys, JV Girls, JV Boys, MS Boys, MS Girls.</span><br/><span class="rvts6"><br/></span></li>
+<li value="2" style="margin-left: 0px" class="rvps19"><span class="rvts6">Make sure group name spelling and case is consistent across all racers – xcscoreboard is case sensitive, i.e., JV Boys and JV boys are recognized as two different groups.</span><br/><span class="rvts6"><br/></span></li>
+<li value="3" style="margin-left: 0px" class="rvps19"><span class="rvts6">As well as manual entry, Cross Country Scoreboard also supports importing racer registrations direct from Excel, CSV file, or </span><a class="rvts31" href="IntegratingwithGoogleSheets.html">Google Sheets</a><span class="rvts6">. Personally, I recommend a strategy of having participating team coaches entering racers in a shared Google sheet for import. For more information on this process see </span><a class="rvts31" href="StrategyforRaceRegistration.html">Strategy for Race Registration.</a><br/><span class="rvts6"><br/></span></li>
+<li value="4" style="margin-left: 0px" class="rvps19"><span class="rvts6">If using a timing system (currently Ipico is the only supported timing system), then enable chip timing (menu -&gt; Timing -&gt; &nbsp;Enable Chip Timing) and populate the Chip/Bib Mapping table. This can be done manually or by importing the mapping data from a CSV mapfile, Excel, or </span><a class="rvts31" href="IntegratingwithGoogleSheets.html">Google Sheets</a></li>
+</ol></ol>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

@@ -1,0 +1,90 @@
+﻿<html>
+	
+<head>
+	<title>Projected Scoring vs. Official Scoring</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Newtopic1");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Projected Scoring vs. Official Scoring</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Newtopic.html">Cross Country Scorebard Pages</a> &rsaquo;&rsaquo; <a href="RacersPage.html">Racers Page</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="RacersPage.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="RacersPage.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="BibsTimingPage.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h1 class="rvps4"><a name="_Toc450320564"></a>
+<span class="rvts0"><span class="rvts13">Official Scoring and Projected Scoring -- the challenge</span></span></h1>
+<p class="rvps2"><span class="rvts42"><br/></span></p>
+<p class="rvps7"><span class="rvts6">In official Cross Country scoring, incremental point values are only assigned to finishers whose team's </span><span class="rvts44">finisher count</span><span class="rvts6"> meets or exceeds the threshold of minimum team size (typically five). Because of this, official results can only be determined when all racers have finished (or all participating teams have met that threshold). And cross country scoreboard calculates final official scores using this method.</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">During the race, however, Cross Country scoreboard </span><span class="rvts43">predicts</span><span class="rvts6"> team results by assigning point values to finishers whose team's </span><span class="rvts44">registration count</span><span class="rvts6"> meets or exceeds the minimum team size. However, not every team who registers the minimum size actually finishes that number (or even brings that many to the race). When this happens, final, official team scores, for all teams are reduced from their projected values. In most cases the reduction of points doesn't affect placement, but sometimes it can.</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">In order to mitigate the effect of this scoring ambiguity, you may want to organize a scratch meeting where coaches who had registered more than 5 (or the minimum team size) for a particular group, but brought less than that number, can scratch those racers. You would simply delete those runners from the Racers page. This would make the final projected scores most likely equal to that of the final scores. This is an optional step -- it is not necessary.</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

@@ -1,0 +1,99 @@
+﻿<html>
+	
+<head>
+	<title>Chip/Bib Mapping Table</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("ChipBibMappingTable");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Chip/Bib Mapping Table</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Newtopic.html">Cross Country Scorebard Pages</a> &rsaquo;&rsaquo; <a href="TimingSystemPage.html">Timing System Page</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="TimingSystemPage.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="ConnectingtoTimingSystem.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="TimingRaceusingChipTiming.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h2 class="rvps6"><a name="_Toc450320572"></a>
+<span class="rvts0"><span class="rvts20">Creating/Importing the Chip/Bib Mapping Table</span></span></h2>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">Importing the Mapping Table</span><br/><span class="rvts26">In order to use the timing system, the chips used for timing must be mapped to bib#’s via a Chip/Bib mapping file. If you already have a mapping file in CSV, Excel or Google Sheets format, you can import using the buttons in the console. The Excel or Google Sheets worksheet you import must have the fields in the same order as listed in the mapping table. For the CSV file, the Bib# and Chip ID fields can be in either order.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">Manual Entry of Mapping Table</span><br/><span class="rvts26">If you do not have a mapping file, you can read the chips into the mapping table while in “Edit Mode”.</span></li>
+</ul>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps29"><span class="rvts26">Connect to your timing system.</span></li>
+<li style="margin-left: 0px" class="rvps29"><span class="rvts26">Make sure “Edit Mode” is checked. This ensures that chip reads are entered in the Chip/Bib Mapping table and not the Bibs/Timing table (note that this mode should be unchecked during actual races).</span></li>
+<li style="margin-left: 0px" class="rvps29"><span class="rvts26">You can choose to have 1 or 2 chips per bib, e.g., runners may wear two shoe chips (one per foot) that map to one bib#, or one chip that attaches to the bib. Click the “Chips/Bib = X” button to toggle that option. This will control the bib increment as you scan chips into the table.</span></li>
+<li style="margin-left: 0px" class="rvps29"><span class="rvts26">In the first row of the Chip/Bib Mapping table, enter your starting/lowest bib#. Then begin scanning the chips. They will automatically and incrementally be assigned a bib#.</span></li>
+<li style="margin-left: 0px" class="rvps29"><span class="rvts26">After you have built the Chip/Bib Mapping table, uncheck the Edit Mode checkbox so that subsequent chip reads will be entered into the Bibs/Timing table.</span></li>
+<li style="margin-left: 0px" class="rvps29"><span class="rvts26">You can also export the Chip/Bib Mapping table to csv or Excel for importation into another xcscoreboard race file.</span></li>
+</ul></ul>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">Note that xcscoreboard is configured so that a chip will be read and recorded in the Chip Readings table repeatedly (multiple times), however, once a chip has been read, it will not read and record again in the Chip Readings table for 10 seconds.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">Also note, that once a Bib# has been recorded in the Bibs/Timing sheet, the timing system will NOT record it a second time in the Bibs/Timing sheet.</span></li>
+</ul>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

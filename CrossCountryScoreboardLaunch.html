@@ -1,0 +1,94 @@
+﻿<html>
+	
+<head>
+	<title>Cross Country Scoreboard Launch</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("CrossCountryScoreboardLaunch");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Cross Country Scoreboard Launch</h1>
+				
+				</div>
+			<div id="topic_header_nav">
+				<a href="StrategyforRaceRegistration.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="CrossCountryScoreboardNavigation.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h1 class="rvps4"><a name="_Toc450320561"></a>
+<span class="rvts0"><span class="rvts13">Cross Country Scoreboard Launch</span></span></h1>
+<p class="rvps7"><span class="rvts6">Upon application launch, you are presented with a Startup selection with four choices:</span><br/><img alt="" style="padding : 1px;" src="lib/NewItem15.png"><br/><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; margin-left: 0px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps28"><span class="rvts39">Standalone Mode</span><br/><span class="rvts26">This mode is meant for single computer use during race configuration and set-up. Cross Country Scoreboard requires that a race file (extension *.xc) be chosen at launch time. After launch, the chosen file is automatically saved throughout the session. There is no need (or option) to save the file.</span></li>
+</ul></ul>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps29"><span class="rvts26">Upon first startup, you will need to choose “New Race File”. For subsequent launches, you may choose “Existing Race File” to keep working on a previous race file.</span></li>
+<li style="margin-left: 0px" class="rvps29"><span class="rvts26">It is recommended that new race files be contained in is its own event folder (with the same name). This is because xcscoreboard creates accompanying html individual and team results files in the same folder as the race file.</span><br/><span class="rvts26"><br/></span></li>
+</ul></ul>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; margin-left: 0px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps28"><span class="rvts39">Orchestration Mode</span></li>
+</ul></ul>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps29"><span class="rvts39">Timer Mode</span><br/><span class="rvts26">This mode is meant for race day. Once this button is chosen, the application searches the WIFI network for its equivalent “Bib Entry Mode” companion before continuing. &nbsp;After discovering the corresponding Bib Entry partner, an existing race file must be chosen and the application continues to open and finally sync that race file data with its partner. In the Bibs/Timing page, typically, in this mode, only the “Time” and “ABib#” fields can receive entries (but can be overridden by clicking the column header).</span></li>
+<li style="margin-left: 0px" class="rvps29"><span class="rvts39">Bib Entry Mode</span><br/><span class="rvts26">This mode is meant for race day. Once this button is chosen, the application searches the WIFI network for its equivalent “Timer Mode” companion before continuing. &nbsp;After discovering the corresponding Timer Mode partner, the launch finishes and receives all configuration, Racer data, and pre-existing Bib/Timing data (if any exists) from its partner and updates its data sets accordingly. Typically, when in this mode, when in the Bibs/Timing sheet, only the “Bib#” entries can be modified. However, if a timing system is connected to the Timer companion, then the ABib# column is the only set of entries that can be modified (allowing the Timing system to control actual Bib entry values).</span><br/><span class="rvts26"></span><br/><span class="rvts26">The only data that can be meaningfully changed when in Bib Entry Mode is the Bib data on the Bibs/Timing page.</span></li>
+</ul></ul>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

@@ -1,0 +1,94 @@
+﻿<html>
+	
+<head>
+	<title>Timing System Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("TimingSystemPage");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Timing System Page</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Newtopic.html">Cross Country Scorebard Pages</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Newtopic.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="AwardsPage.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="ConnectingtoTimingSystem.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h1 class="rvps4"><a name="_Toc450320570"></a>
+<span class="rvts0"><span class="rvts13">Timing System Page</span></span></h1>
+<p class="rvps7"><span class="rvts6">Note -- currently Ipico timing systems are supported.</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">By default, the Timing System page is not enabled. To enable, in the menu, click Timing -&gt; Enable Chip Timing. This setting and the subsequent Ipico configuration will be saved with the race file. The Timing System page is only available when in Standalone mode or Timer mode.</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">Initially the Timing System page looks as follows:</span><br/><img width="622" height="463" alt="" style="padding : 1px; background-color : #000000;" src="lib/NewItem29.png"></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">The Ipico Config Console Section controls connection information and control, as well as options for importing the required Chip/Bib Mapping file into the Chip/Bib Mapping table.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">The Chip Bib Mapping table is where you can edit or import the Chip/Bib Mapping information.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">The Chip Readings table is a read-only table that simply reports every chip’s first read time.</span></li>
+</ul>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

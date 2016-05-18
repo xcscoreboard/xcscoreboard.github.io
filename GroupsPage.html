@@ -1,0 +1,90 @@
+﻿<html>
+	
+<head>
+	<title>Groups Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("GroupsPage");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Groups Page</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Newtopic.html">Cross Country Scorebard Pages</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Newtopic.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="TimerDialog.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="FinishersandTeamPages.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h1 class="rvps4"><a name="_Toc450320567"></a>
+<span class="rvts0"><span class="rvts13">Groups Page</span></span></h1>
+<p class="rvps7"><span class="rvts6">The Groups Page is mostly a read-only display table showing the groups that are registered for the event, their Finish Status (either “Not Yet Started”, “Not Yet Finished”, or “Finished”), their Start Time, Finish Time, and if Results are enabled/disabled.</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">If a “Not Yet Finished” race is ready to be marked as “Finished” (the race is complete and official results are ready to be calculated and published), then click that appropriate Group’s, Finish Time cell to toggle the Finish Time and change the status. A race can also be unmarked as finished (if desired) by toggling the same cell.</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">A “Not Yet Finished” race (with an official starting time) cannot be manually toggled to “Not Yet Started”. However, when opening an existing race file if any “Not Yet Finished” races exist that started longer than 24 hours ago, then are toggled as “Not Yet Started”. This is to help when copying race files for use in a different event.</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">The Results field can be toggled to/from enabled/disabled. Groups with disabled results will not output or publish results data and thus will not be shows on your online scoreboard (if activated). If there are published scoreboard results for a group, and you toggle the "Results" field to "disabled", then the results are removed from the scoreboard. Toggling back to enabled will re-publish those results (if connected).</span></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

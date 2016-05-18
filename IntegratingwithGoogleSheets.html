@@ -1,0 +1,89 @@
+﻿<html>
+	
+<head>
+	<title>Integrating with Google Sheets</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("IntegratingwithGoogleSheets");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Integrating with Google Sheets</h1>
+				
+				</div>
+			<div id="topic_header_nav">
+				<a href="Awards.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="CreatingaGoogleJSONCredentialsFi.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h1 class="rvps4"><a name="_Toc450320557"></a>
+<span class="rvts0"><span class="rvts13">Integrating xcscoreboard with Google Sheets</span></span></h1>
+<p class="rvps2"><span class="rvts16">Google Sheets Integration</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">Before you can import or export to Google Spreadheets in your Google Drive, you need to first create a service account in the Google Developers Console and </span><a class="rvts31" href="CreatingaGoogleJSONCredentialsFi.html">download a JSON file</a><span class="rvts6">.</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">After downloading the JSON file, click the "Credentials" menu option and pick "Set Location of Google Key File" to select the JSON file that was downloaded. This step only needs to occur once for any and all race files.</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">Cross Country Scoreboard comes with a sample JSON file has read-only access to the following Google Spreadsheet:</span></p>
+<p class="rvps7"><a class="rvts31" href="https://docs.google.com/spreadsheets/d/1vSBFM_dd52Xsygaxo42X6Z2jtkDTH8o4IX7-Ku2M0v0/edit?usp=sharing">Sample Racers</a></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">You can use this JSON file to import a sample set of runners for experimenting with xcscoreboard.</span></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

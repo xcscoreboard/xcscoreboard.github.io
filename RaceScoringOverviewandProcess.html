@@ -1,0 +1,103 @@
+﻿<html>
+	
+<head>
+	<title>Race Scoring Overview and Process</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("RaceScoringOverviewandProcess");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Race Scoring Overview and Process</h1>
+				
+				</div>
+			<div id="topic_header_nav">
+				<a href="SystemRequirements.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="ConfigureRace.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h1 class="rvps4"><a name="_Toc450320550"></a>
+<span class="rvts0"><span class="rvts13">Race Scoring Overview and Process</span></span></h1>
+<p class="rvps7"><span class="rvts37">Scoring/Timing</span></p>
+<p class="rvps7"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">In order to accurately score and time a race in the xcscoreboard app, you need to ensure the following:</span></p>
+<p class="rvps17"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 78px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" style="margin-left: 0px" class="rvps18"><span class="rvts26">Before the race, ensure all racers are registered accurately -- that each are assigned to the correct team, correct group, and that each affixes the correct assigned race bib to the front of their jersey. The registration task is done while xcscoreboard is in standalone mode.</span></li>
+</ol>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: circle;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: square;">
+<li style="margin-left: 0px" class="rvps18"><span class="rvts26">Note that a race bib can be assigned to one and only one race group. To allow racers to optionally run in multiple groups (e.g., a runner may opt to run Varsity or JV), then either have two different race files for the event, assign those runners multiple bibs, each to a different race, or provide, a pre-event scratch/change meeting for coaches to re-assign registrations.</span></li>
+<li style="margin-left: 0px" class="rvps18"><span class="rvts26">If using a timing system, a the Chip/Bib Mapping cross-reference table needs to be populated that maps each runner's assigned bib# to the associated globally unique RFID Chip-ID that is read by the timing system.</span><br/><span class="rvts26"><br/></span></li>
+</ul></ul></ul>
+<ol style="text-indent: 0px; margin-left: 78px; list-style-position: outside; list-style-type: decimal;">
+<li value="2" style="margin-left: 0px" class="rvps18"><span class="rvts26">During a race, finishers' </span><span class="rvts36">bib#s</span><span class="rvts26"> should be entered in the Bibs/Timing page in the order of race completion. This task is done while xcscoreboard is in the orchestration mode (bib entry mode) or is done automatically by the timing system. This cross references the Racers table to identify the placement of runners for the race.</span><br/><span class="rvts26"><br/></span></li>
+<li value="3" style="margin-left: 0px" class="rvps18"><span class="rvts26">During a race, finishers' </span><span class="rvts36">times</span><span class="rvts26"> should be entered in the Bibs/Timing page in the order of race completion. This task is done while xcscoreboard is in the orchestration mode (timing mode) using the stopwatch timer or by the optional timing system.</span><br/><span class="rvts26"><br/></span></li>
+</ol>
+<p class="rvps17"><span class="rvts6">If all of the three previous tasks are performed correctly, xcscoreboard provides accurate projected and final team and individual results for each race group in real-time. Cross Country Scoreboard is built to ensure these tasks are performed as easily and efficiently as possible.</span></p>
+<p class="rvps17"><span class="rvts6"><br/></span></p>
+<p class="rvps17"><span class="rvts6">The following sub-topics describe the Scoring/Timing process:</span></p>
+<ul style="text-indent: 0px; margin-left: 78px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps18"><a class="rvts35" href="ConfigureRace.html">Configure Race</a></li>
+<li style="margin-left: 0px" class="rvps18"><a class="rvts35" href="RegisterRunners.html">Register Runners</a></li>
+<li style="margin-left: 0px" class="rvps18"><a class="rvts35" href="ConductRace.html">Conduct Race</a></li>
+<li style="margin-left: 0px" class="rvps18"><a class="rvts35" href="Awards.html">Awards</a></li>
+</ul>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

@@ -1,0 +1,101 @@
+﻿<html>
+	
+<head>
+	<title>Sharing Google Sheet with xcscoreboard</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("SharingGoogleSheetwithxcscoreboa");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Sharing Google Sheet with xcscoreboard</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="IntegratingwithGoogleSheets.html">Integrating with Google Sheets</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="IntegratingwithGoogleSheets.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="CreatingaGoogleJSONCredentialsFi.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="StrategyforRaceRegistration.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h2 class="rvps6"><a name="_Toc450320559"></a>
+<span class="rvts0"><span class="rvts20">Sharing Google Sheet with xcscoreboard</span></span></h2>
+<p class="rvps7"><span class="rvts16">Google Drive Walkthrough -- Sharing a Spreadsheet with xcscoreboard</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">Note that xcscoreboard can import/export to/from existing google sheets (it doesn't have the ability to create new sheets). Therefore you must grant the xcscoreboard service account email, access to each desired spreadsheet (or to the owning folder).</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts6">Here are the steps:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: decimal;">
+<li value="1" style="margin-left: 0px" class="rvps20"><span class="rvts6">Open xcscoreboard in standalone mode and with a good, solid, internet connection.</span><br/><span class="rvts6"><br/></span></li>
+<li value="2" style="margin-left: 0px" class="rvps20"><span class="rvts6">If not done already, set the location of the Google Key File – Select Credentials -&gt; Set Location of Google Key File and drill into the folder containing the JSON file you downloaded when you created the Google Service Account.</span><br/><span class="rvts6"><br/></span></li>
+<li value="3" style="margin-left: 0px" class="rvps20"><span class="rvts6">Select Credentials -&gt; Show Google Key File Service Account Email Address. Press the OK button to copy the service account email address to the clipboard.</span><br/><span class="rvts6"><br/></span></li>
+<li value="4" style="margin-left: 0px" class="rvps20"><span class="rvts6">Open Google Drive and select the spreadsheet or folder that you wish to share with xcscoreboard.</span><br/><span class="rvts6"><br/></span></li>
+<li value="5" style="margin-left: 0px" class="rvps20"><span class="rvts6">Click the share button on the toolbar.</span></li>
+</ol>
+<p class="rvps20"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; margin-left: 48px; list-style-position: outside; list-style-type: decimal;">
+<li value="6" style="margin-left: 0px" class="rvps20"><span class="rvts6">In the entry box labeled "People", paste in the service account email address and verify "Can Edit" is selected in the associated drop down.</span><br/><span class="rvts6"><br/></span></li>
+<li value="7" style="margin-left: 0px" class="rvps20"><span class="rvts6">Now xcscoreboard can import or export to the google spreadsheet on which you just configured sharing.</span></li>
+</ol>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

@@ -1,0 +1,91 @@
+﻿<html>
+	
+<head>
+	<title>Timer Dialog</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("TimerDialog");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Timer Dialog</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Newtopic.html">Cross Country Scorebard Pages</a> &rsaquo;&rsaquo; <a href="BibsTimingPage.html">Bibs/Timing Page</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="BibsTimingPage.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="BibsTimingPage.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="GroupsPage.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h2 class="rvps6"><a name="_Toc450320566"></a>
+<span class="rvts0"><span class="rvts20">Timer Dialog</span></span></h2>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">When in Timer mode or Standalone mode, the “Open Timer” button is displayed on the Bibs/Timing page. Before starting each race, click the “Open Timer” button (or access the timer via the menu, Timing -&gt; Open Timer selection). </span><span class="rvts39">This is a required step even when using timing equipment to time the race</span><span class="rvts26">. This will prompt you to assign the timer to the group (or groups if running multiple simultaneous groups) to that timer.</span><br/><img alt="" style="padding : 1px;" src="lib/NewItem36.png"><br/><span class="rvts26"></span><br/><span class="rvts26">Select the group(s) that you are about to start timing and press the Ok button. You are presented with a timer to use for timing the race:</span><br/><img alt="" style="padding : 1px;" src="lib/NewItem30.png"><br/><span class="rvts26">The Timer will always remain as the top most window.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">In the bottom right corner is a "button" showing the list of Groups assigned to this timer. If you click the button, the full list of groups assigned to this timer are displayed. When you start the timer, the groups' race start time is calculated and recorded in the table on the Groups page.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">The initial time of 00:00 is displayed. However, this is an editable field and can be set to any desired duration. For example, if the starting line is a 5 minute walk from the finish line, then you could set the initial time to 05:00, start the race and record using a stop watch. Then walk to the finish line where the timing computer is located. Finally, at the 5 minute mark, start the race timer. The official race start time for the groups assigned to the race timer is calculated by using the offset.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">When performing manual timing, as racers finish, always make sure the correct timer window is the active and highlighted window. At the moment a racer crosses the finish line, press the &lt;enter&gt; key (optionally the “Record” button could be depressed, but is less efficient). This records the racers finish time in the Bibs/Timing Sheet. Optionally, if convenient (such as when a solitary racer is finishing) pre-enter the bib# in the “bib #” field of the timer. As the racer crosses, press &lt;enter&gt; and the bib # and finish time are simultaneously entered in the ABib# and Time fields. The ABib# is important as it serves as an alignment validation for bib entry being performed by the bib entry operator. If errors are detected, they can be corrected by the timer operator in real-time. Simply make sure that before the next finisher crosses, if manual timing, that the timer is the highlighted/active window.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">Note that two timers, assigned to different groups, can operate simultaneously. For instance if a race is running longer than anticipated and there are still a few slow runners on the course, the next race in the event can be started without affecting the timing of the current race. Simply open a 2</span><span class="rvts27">nd</span><span class="rvts26"> timer and assign it to the group(s) running the next race. Then start the race. As the previous race’s final runners finish, ensure that the &lt;enter&gt; key is pressed while that race’s timer is highlighted/active. Noting that the race assignment for a time is listed on the bottom right of the timer.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">Once a race is complete, stop the timer, and close the timer. You will then be prompted with a message asking if you wish to mark the assigned Groups as “Finished”. If you answer yes, then the race will be marked finished and official results will be calculated and published. If you are not ready to certify the results, then answer no. You can mark the race finished on the “Groups” page when you are ready.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">You can Import Bibs and Timing data directly from Excel via menu option, Import -&gt; Import Finish Bibs/Times from Excel. The source Excel worksheet with times in Column “A” and Bib#’s in Column “B”. This feature allows you to import finish data from another host’s race into xcscoreboard so you can check their scoring or run ‘a what if’ analysis.</span></li>
+</ul>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

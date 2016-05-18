@@ -1,0 +1,92 @@
+﻿<html>
+	
+<head>
+	<title>Timing Race using Chip Timing</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("TimingRaceusingChipTiming");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Timing Race using Chip Timing</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Newtopic.html">Cross Country Scorebard Pages</a> &rsaquo;&rsaquo; <a href="TimingSystemPage.html">Timing System Page</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="TimingSystemPage.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="ChipBibMappingTable.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h2 class="rvps6"><a name="_Toc450320573"></a>
+<span class="rvts0"><span class="rvts20">Timing a Race using the Ipico Timing System</span></span></h2>
+<ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">Ipico timing is supported in Standalone mode or in Orchestration/Timing mode (attached to a bib entry host). However it is recommended to operate in Orchestration mode so that there are always two sources of Bib entry (in case there is a timing system failure or to help with identifying close calls).</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">Before the race begins ensure that the Ipico timing system is in the Connected State. When xcscoreboard connects to the Ipico system, it automatically synchronizes the Ipico system clock with the computer clock. This can be verified by launching the Ipico Dashboard app (supplied by Ipico), connecting using that app, and verifying that the Computer time and Reader time flow in a synchronized fashion. If they are not synchronized, simply press the “Set Time” button a few times in the dashboard. Clock synchronization is important because the Ipico system sends a date/time field and Chip ID field with every chip read. Then xcscoreboard uses that date/time field to calculate the finish time based on the race start time. Any difference in the two clocks will be reflected in error by the same amount in the timing results.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">Ensure that the Chip/Bib Mapping table is populated and that the “Edit Mode” checkbox is unchecked (should be by default at application launch).</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">If you have activated an online scoreboard for this race, ensure that xcscoreboard is connected to the scoreboard via the Config page.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">Go to the Bibs/Timing page and launch the Timer Dialog. Upon race start, start the race clock timer or ensure that the race clock is synchronized with an external timer that started when the race started. This will set the race start time (gun time) so that chip reads will calculate accurate finish times.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">By default, the Ipico chip readings will populate the “Time” field and “Bib#” fields. However, if in Timer mode and you wish the Bib operator to enter the primary Bib#’s (and the Ipico to enter ABib#’s), simply click the ABib# header in the Bibs/Timing table to toggle the protection state of the ABib# and Bib# columns.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">Note that if two or more racers cross the finish within two tenths of a second from one another, their times will be highlighted in RED – indicating a close call that should be reviewed by a finish line judge to verify that the timing system accurately measured the correct finish order. Corrections are as simple as clicking and dragging the Bib# up or down by the operator of the timer computer.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">Any Racer Names that appear in Yellow or Blue indicate a racer who has finished either before their registered race group’s start time (Yellow) or finished after their registered race’s finish time (Blue). This indicates either the racer ran in the wrong race, is wearing the wrong chip (or bib), or that their registration is in error. This needs to be corrected (either as a DQ or correcting that racers registration in the Racers page) so that team scores are accurate.</span></li>
+<li style="margin-left: 0px" class="rvps28"><span class="rvts26">In the highly unlikely scenario that there is a timing system failure, the bib entry host operator can unprotect the “Time” column (by clicking its header) and can be used to record times as well as bibs. A timer can be started on the bib host from the menu Timing -&gt; Open Timer, and synchronized with the current race time. After the race is complete, save the file using the menu File -&gt; Save as and, assuming the Timer host is still down, end xcscoreboard and re-launched in standalone mode so that results can be published.</span></li>
+</ul>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

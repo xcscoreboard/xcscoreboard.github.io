@@ -1,0 +1,106 @@
+﻿<html>
+	
+<head>
+	<title>Bibs/Timing Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.9.2.132">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Cross Country Scoreboard.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("BibsTimingPage");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Bibs/Timing Page</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Newtopic.html">Cross Country Scorebard Pages</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Newtopic.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Newtopic1.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="TimerDialog.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<h1 class="rvps4"><a name="_Toc450320565"></a>
+<span class="rvts0"><span class="rvts13">Bibs/Timing Page</span></span></h1>
+<p class="rvps7"><span class="rvts6">This is where timing and bib#’s are entered in finish order for scoring and timing the race. The editable entries are the Time, ABib#, and Bib# columns (additionally the DQ column can be selected for a finisher to toggle their disqualification status). However, the protection status of the Time, ABib#, and Bib# columns depends on the mode (standalone, timer, bib entry) and/or if chip timing has been enabled.</span><br/><span class="rvts45"></span><br/><span class="rvts45">Fields</span><span class="rvts6">:</span></p>
+<ul style="text-indent: 0px; margin-left: 72px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps32"><span class="rvts26">Place</span><br/><span class="rvts26">This field displays the overall finish order of the runners across all races. It typically matches the row number, but doesn’t have, i.e., when there are blank rows inserted in the sheet.</span></li>
+<li style="margin-left: 0px" class="rvps32"><span class="rvts26">Grp Place</span><br/><span class="rvts26">This field displays the finish order of the runners by group.</span></li>
+<li style="margin-left: 0px" class="rvps32"><span class="rvts26">Time</span><br/><span class="rvts26">This field contains the finishers finish time. This time is either recorded from the Timer dialog (during manual timing) or is calculated and recorded automatically when using chip timing equipment.</span></li>
+</ul>
+<ul style="text-indent: 0px; margin-left: 72px; list-style-position: outside;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps33"><span class="rvts26">This field is protected from changes when in bib entry mode.</span></li>
+<li style="margin-left: 0px" class="rvps33"><span class="rvts26">When using the chip timing equipment, if two or more runners finish within 2 tenths of a second from each other, the times for those finishers are highlighted in RED. This indicates a “close call” and finish order should be given scrutiny. If changes of order need to be made, the timer operator can simply move the finisher’s Bib# up or down appropriately (leaving the time field alone). If there is a separate bib entry operator who is entering the ABib#'s, this can be used as validation for those "close calls".</span></li>
+</ul></ul>
+<ul style="text-indent: 0px; margin-left: 72px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps32"><span class="rvts26">ABib# and Bib#</span><br/><span class="rvts26">The ABib# is the “Alignment Bib#” or “Anchor Bib#” field and is used for verification purposes. The Bib# field is used for actual scoring of the race, while the ABib# field is provided for visual verification purposes (if all data is entered perfectly, then each ABib# should match its corresponding row's Bib#).</span></li>
+</ul>
+<ul style="text-indent: 0px; margin-left: 72px; list-style-position: outside;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps33"><span class="rvts26">In standalone mode, the ABib# column is a protected column and is unused and the Bib# column is an editable field.</span></li>
+<li style="margin-left: 0px" class="rvps33"><span class="rvts26">In timer mode, when manually timing, the ABib# is entered by the timer operator (when convenient) using the Timer dialog and occurs simultaneous with the recorded time and serves to </span><span class="rvts36">Anchor</span><span class="rvts26"> the time with the finisher by Bib# (which is entered by the bib operator). If the ABib# for a row doesn’t match the Bib# on the same row (as entered by the bib entry operator), then this indicates an entry error by one of the operators that requires correction. If timing and bib entry are without fault, then all of the optional ABib#’s will match the Bib#’s of the same row and serves as a verification step.</span></li>
+<li style="margin-left: 0px" class="rvps33"><span class="rvts26">When chip timing, by default, the ABib# column is a protected column in timer mode – &nbsp;as the timing equipment automatically enters its data in the Bib# column and the bib mode operator enters finisher’s ABib#’s (used for backup scoring). However, at any time, when in timer or bib entry mode, the ABib# column can be unprotected on the Timer host by clicking the column header. This will cause the column protection roles to swap and the timing system will enter bib# results in the ABib# column and the bib entry operator will be responsible for entering bib#’s in the Bib# column. This may be required if the timing system goes down and scoring still needs to continue. Or if it is desired to use the timing system to do timing only and not scoring.</span></li>
+</ul></ul>
+<ul style="text-indent: 0px; margin-left: 72px; list-style-position: outside;">
+<li style="margin-left: 0px" class="rvps32"><span class="rvts26">Team Name, Group, Racer Name</span><br/><span class="rvts26">These fields are automatically calculated based on a cross reference lookup of the finisher Bib#. If the Bib# field is moved up or down, these fields are updated appropriately.</span></li>
+<li style="margin-left: 0px" class="rvps32"><span class="rvts26">DQ?</span><br/><span class="rvts26">This field can be toggled by the timer operator (or in standalone) by clicking in the cell of the racer to be disqualified. Turning this field on fills in a DQ indicator for the associated finisher and turns that finisher’s information RED. That finisher’s scores are removed from the results and the finisher shows as a DQ in a separate results table at the bottom of the individual results with no finishing time reported.</span></li>
+<li style="margin-left: 0px" class="rvps32"><span class="rvts26">Bib Entry Time</span><br/><span class="rvts26">This field displays the date/time the Bib# was entered into the sheet (either by the bib entry operator or the timing system). This field is used by xcscoreboard to validate that the racer finished within the start and end time of his/her assigned race. If the racer finished before her assigned race started, then the Racer’s Team Name, Group, and Racer Name are highlighted Yellow. If the racers finished after his assigned race was marked finished, then the same detail is highlighted Blue. Both highlights indicate that a racer either ran the “wrong” race or was registered incorrectly (or you haven’t been using the timer to start the race). If the racer finished a race that he/she was not assigned to, then this will cause scoring errors and needs to be corrected (either by correcting the registration in the Racers page or by disqualifying the racer). </span></li>
+</ul>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 5/6/2016 by xcscoreboard.com. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+
